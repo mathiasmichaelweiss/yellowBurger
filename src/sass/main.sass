@@ -1,0 +1,66 @@
+body
+    background-color: #272727
+    color: #fff
+
+.container
+    position: relative
+    height: 100vh
+    .menu-burger
+        position: relative
+        display: flex
+        left: 50%
+        top: 50%
+        margin-top: -375px
+        margin-left: -33px
+        width: 66px
+        height: 66px
+        background-color: #FFE767
+        border-radius: 69px
+        transition: height .5s
+        .burger
+            position: absolute
+            border-radius: 69px
+            top: 100%
+            margin-top: -66px
+            width: 66px
+            height: 66px
+            &-icon, &-icon::before, &-icon::after
+                position: absolute
+                top: 50%
+                margin-top: -1px
+                left: 50%
+                margin-left: -12.5px
+                width: 25px
+                height: 2px
+                background-color: #272727
+                transition: .5s
+            &-icon::before
+                content: ''
+                transform: translateY(-5px)
+            &-icon::after
+                content: ''
+                transform: translateY(5px)
+        .active-burger
+            .burger-icon
+                transform: rotate(90deg)
+            .burger-icon::before
+                transform: rotate(-45deg)
+                transform-origin: left bottom
+                width: 12.5px
+            .burger-icon::after
+                transform: rotate(45deg)
+                transform-origin: left top
+                width: 12.5px
+        nav
+            position: absolute
+            display: flex
+            flex-direction: column
+            height: 600px
+            left: 50%
+            top: 25px
+            margin-left: -13px
+            a
+                display: none
+                width: 50%
+                height: 26px
+                margin-bottom: 50px

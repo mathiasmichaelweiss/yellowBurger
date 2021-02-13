@@ -1,0 +1,104 @@
+body {
+  background-color: #272727;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.container .menu-burger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  margin-top: -375px;
+  margin-left: -33px;
+  width: 66px;
+  height: 66px;
+  background-color: #FFE767;
+  border-radius: 69px;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+}
+
+.container .menu-burger .burger {
+  position: absolute;
+  border-radius: 69px;
+  top: 100%;
+  margin-top: -66px;
+  width: 66px;
+  height: 66px;
+}
+
+.container .menu-burger .burger-icon, .container .menu-burger .burger-icon::before, .container .menu-burger .burger-icon::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -12.5px;
+  width: 25px;
+  height: 2px;
+  background-color: #272727;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container .menu-burger .burger-icon::before {
+  content: '';
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.container .menu-burger .burger-icon::after {
+  content: '';
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.container .menu-burger .active-burger .burger-icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.container .menu-burger .active-burger .burger-icon::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  width: 12.5px;
+}
+
+.container .menu-burger .active-burger .burger-icon::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  width: 12.5px;
+}
+
+.container .menu-burger nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 600px;
+  left: 50%;
+  top: 25px;
+  margin-left: -13px;
+}
+
+.container .menu-burger nav a {
+  display: none;
+  width: 50%;
+  height: 26px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=main.css.map */
