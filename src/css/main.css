@@ -10,16 +10,13 @@ body {
 
 .container .menu-burger {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   left: 50%;
   top: 50%;
   margin-top: -375px;
   margin-left: -33px;
   width: 66px;
   height: 66px;
-  background-color: #FFE767;
+  background-color: #ffffff;
   border-radius: 69px;
   -webkit-transition: height .5s;
   transition: height .5s;
@@ -32,9 +29,11 @@ body {
   margin-top: -66px;
   width: 66px;
   height: 66px;
+  cursor: pointer;
 }
 
 .container .menu-burger .burger-icon, .container .menu-burger .burger-icon::before, .container .menu-burger .burger-icon::after {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   margin-top: -1px;
